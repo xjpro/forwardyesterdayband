@@ -1,13 +1,12 @@
 {
-  "name": "my-app",
+  "name": "forwardyesterdayband",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prepare": "husky install"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "15.2.1",
@@ -23,9 +22,5 @@
     "eslint-config-next": "15.2.1",
     "prettier": "^3.5.3",
     "typescript": "^5"
-  },
-  "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
   }
 }
