@@ -18,10 +18,9 @@ export default function Home() {
       </section>
 
       <section>
-        <h2>Where to Find Us Live</h2>
+        <h2>Where to Find Us</h2>
         <p>
-          Catch us live at Finnish Bistro on January 19th! Stay tuned for more
-          upcoming performances.
+          Catch us live at The Finnish Bistro soon!
         </p>
       </section>
 
