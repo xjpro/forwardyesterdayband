@@ -33,7 +33,7 @@ export default function Home() {
       <section>
         <h2>Contact Us</h2>
         <p>
-          Interested in booking us or learning more? We'd love to hear from you!
+          Interested in booking us or learning more? We&pos;d love to hear from you!
         </p>
         <div>Email Us: jprodahl at gmail dot com</div>
       </section>
