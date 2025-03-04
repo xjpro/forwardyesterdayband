@@ -1,5 +1,5 @@
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -8,14 +8,14 @@ body {
   text-align: center;
 }
 header {
-  background: linear-gradient(90deg, #4CAF50, #673AB7);
+  background: linear-gradient(90deg, #4caf50, #673ab7);
   color: #fff;
   padding: 2rem 0;
 }
 header h1 {
   margin: 0;
   font-size: 3rem;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
 }
 section {
   padding: 2.5rem;
@@ -44,7 +44,7 @@ footer {
   margin-top: 2rem;
 }
 h2 {
-  color: #4CAF50;
-  font-family: 'Raleway', sans-serif;
+  color: #4caf50;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
