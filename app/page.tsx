@@ -27,8 +27,8 @@ export default function Home() {
 
       <section>
         <h2>Past Shows</h2>
-        <p>February 23rd &commat; The Finnish Bistro</p>
-        <p>January 19th &commat; The Finnish Bistro</p>
+        <p>February 23rd @ The Finnish Bistro</p>
+        <p>January 19th @ The Finnish Bistro</p>
       </section>
 
       <section>
