@@ -20,7 +20,7 @@ export default function Home() {
       <section>
         <h2>Where to Find Us</h2>
         <p>
-          Catch us live at The Finnish Bistro soon!
+          March 23rd 10:30am @ The Finnish Bistro
         </p>
       </section>
 
