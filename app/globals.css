@@ -10,7 +10,8 @@ body {
 }
 
 header {
-  background: linear-gradient(90deg, #4caf50, #673ab7);
+  background: linear-gradient(90deg, #7B2505, #3E1608);
+
   color: #fff;
   padding: 2rem 0;
 }
@@ -40,11 +41,12 @@ section {
 }
 
 .button:hover {
-  background: #ff914d;
+  background: #762406;
 }
 
 footer {
-  background: linear-gradient(90deg, #ff914d, #ff6f61);
+   background: linear-gradient(90deg, #4caf50, #673ab7);
+
   color: #fff;
   text-align: center;
   padding: 1.5rem 0;
@@ -52,7 +54,19 @@ footer {
 }
 
 h2 {
-  color: #4caf50;
+  color: #7B2505;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
+}
+
+.band-image-bg {
+  background: #0A0A0A;
+}
+
+.band-image {
+  height: 400px;
+  background-image: url("/band-blocks.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
 }
