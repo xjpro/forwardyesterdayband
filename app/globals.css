@@ -64,9 +64,17 @@ h2 {
 }
 
 .band-image {
-  height: 400px;
+  height: 25vh;
   background-image: url("/band-blocks.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0;
+  background-size: contain;
+  background-position: center;
 }
+
+/* big screens */
+@media (min-width: 600px) {
+  .band-image {
+    height: 40vh;
+  }
+}
+
