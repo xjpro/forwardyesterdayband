@@ -22,7 +22,7 @@ export default function Home() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </div>
-        <div>
+        <div className="about-us">
           <h2>About Us</h2>
           <p>
             Forward Yesterday is an acoustic trio blending 90&apos;s alternative,
