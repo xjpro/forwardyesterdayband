@@ -78,3 +78,22 @@ h2 {
   }
 }
 
+
+.flex {
+  display: block;
+  justify-content: center;
+}
+
+/* small screens */
+@media (min-width: 700px) {
+.flex {
+  display: flex;
+  gap: 1rem;
+
+  & > div {
+    flex: 1;
+    justify-items: center;
+  }
+}
+}
+

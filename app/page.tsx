@@ -1,3 +1,6 @@
+const dimensions = {width: 200, height: 315};
+const scale = 1.5;
+
 export default function Home() {
   return (
     <div>
@@ -10,15 +13,27 @@ export default function Home() {
       <section className="band-image"/>
       </div>
 
-      <section>
-        <h2>About Us</h2>
-        <p>
-          Forward Yesterday is an acoustic trio blending 90s alternative,
-          grunge, and R&B with a fresh, stripped-down sound. Our setlist of moody rock and groove-driven R&B covers offers
-          a mix of familiar yet reimagined songs. With upright bass,
-          acoustic guitar, and light percussion, we bring new life to classic tracks.
-        </p>
+      {/*https://youtube.com/shorts/DjFDCiKNGgc?si=VUcaM2nZC9kDDD5j*/}
+      <section className="flex">
+        <div>
+          <iframe width={dimensions.width * scale} height={dimensions.height * scale}
+                  src="https://www.youtube.com/embed/DjFDCiKNGgc?si=VUcaM2nZC9kDDD5j"
+                  title="YouTube video player" frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        </div>
+        <div>
+          <h2>About Us</h2>
+          <p>
+            Forward Yesterday is an acoustic trio blending 90&apos;s alternative,
+            grunge, and R&B with a fresh, stripped-down sound. Our setlist of moody rock and groove-driven R&B covers
+            offers
+            a mix of reimagined songs. With upright bass,
+            acoustic guitar, and light percussion, we bring new life to classic tracks.
+          </p>
+        </div>
       </section>
+
 
       <section>
         <h2>Where to Find Us Next</h2>
