@@ -38,12 +38,13 @@ export default function Home() {
       <section>
         <h2>Where to Find Us Next</h2>
         <p>
-          March 23rd 10:30am @ The Finnish Bistro
+          April 26th 10:30am @ The Finnish Bistro
         </p>
       </section>
 
       <section>
         <h2>Past Shows of 2025</h2>
+          <p>March 23rd 10:30am @ The Finnish Bistro</p>
         <p>February 23rd @ The Finnish Bistro</p>
         <p>January 19th @ The Finnish Bistro</p>
       </section>
