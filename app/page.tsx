@@ -3,9 +3,11 @@ const scale = 1.5;
 
 export default function Home() {
   return (
-    <div>
+    <div className="main-container">
       <header>
-        <h1>Forward Yesterday</h1>
+        <div className="header-content">
+          <h1>Forward Yesterday</h1>
+        </div>
       </header>
 
       <div className="band-image-bg">
@@ -13,8 +15,9 @@ export default function Home() {
       </div>
 
       {/*https://youtube.com/shorts/DjFDCiKNGgc?si=VUcaM2nZC9kDDD5j*/}
-      <section className="flex">
-        <div>
+      <section className="flex video-about-section">
+        <div className="video-container">
+
           <iframe
             width={dimensions.width * scale}
             height={dimensions.height * scale}
@@ -24,44 +27,97 @@ export default function Home() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
+            className="video-frame"
           ></iframe>
         </div>
         <div className="about-us">
-          <h2>About Us</h2>
+          <h2>
+            <i className="fas fa-users"></i> About Us
+          </h2>
           <p>
             Forward Yesterday is an acoustic trio blending 90&apos;s
             alternative, grunge, and R&B with a fresh, stripped-down sound. Our
             setlist of moody rock and groove-driven R&B covers offers a mix of
-            reimagined songs. With upright bass, acoustic guitar, and light
-            percussion, we bring new life to classic tracks.
+            reimagined songs.
+          </p>
+          <p>
+            <i className="fas fa-guitar"></i> Acoustic guitar
+            <i className="fas fa-drum ms-3"></i> Percussion
+            <i className="fas fa-music ms-3"></i> Upright bass
           </p>
         </div>
       </section>
 
-      <section>
-        <h2>Where to Find Us Next</h2>
-        <div>
-          <p>June 12th 8pm @ Kingfield Porchest</p>
-          <p>4254 Garfield in Minneapolis</p>
+      <section className="upcoming-shows">
+        <h2>
+          <i className="fas fa-calendar-alt"></i> Where to Find Us Next
+        </h2>
+        <div className="event-card">
+          <div className="event-date">
+            <span className="event-month">JUN</span>
+            <span className="event-day">12</span>
+          </div>
+          <div className="event-details">
+            <h3>Kingfield Porchest</h3>
+            <p>
+              <i className="fas fa-clock"></i> 8:00 PM
+            </p>
+            <p>
+              <i className="fas fa-map-marker-alt"></i> 4254 Garfield in
+              Minneapolis
+            </p>
+          </div>
         </div>
       </section>
 
-      <section>
-        <h2>Past Shows of 2025</h2>
-        <p>April 26th 10:30am @ The Finnish Bistro</p>
-        <p>March 23rd 10:30am @ The Finnish Bistro</p>
-        <p>February 23rd @ The Finnish Bistro</p>
-        <p>January 19th @ The Finnish Bistro</p>
+      <section className="past-shows">
+        <h2>
+          <i className="fas fa-history"></i> Past Shows of 2025
+        </h2>
+        <div className="shows-grid">
+          <div className="show-item">
+            <i className="fas fa-music show-icon"></i>
+            <p className="show-date">April 26th</p>
+            <p className="show-time">10:30am</p>
+            <p className="show-venue">The Finnish Bistro</p>
+          </div>
+          <div className="show-item">
+            <i className="fas fa-music show-icon"></i>
+            <p className="show-date">March 23rd</p>
+            <p className="show-time">10:30am</p>
+            <p className="show-venue">The Finnish Bistro</p>
+          </div>
+          <div className="show-item">
+            <i className="fas fa-music show-icon"></i>
+            <p className="show-date">February 23rd</p>
+            <p className="show-time">10:30am</p>
+            <p className="show-venue">The Finnish Bistro</p>
+          </div>
+          <div className="show-item">
+            <i className="fas fa-music show-icon"></i>
+            <p className="show-date">January 19th</p>
+            <p className="show-time">10:30am</p>
+            <p className="show-venue">The Finnish Bistro</p>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>Contact Us</h2>
+      <section className="contact-section">
+        <h2>
+          <i className="fas fa-envelope"></i> Contact Us
+        </h2>
         <p>Interested in booking us or learning more?</p>
-        <div>Email Us: jprodahl at gmail dot com</div>
+        <div className="contact-info">
+          <a href="mailto:jprodahl@gmail.com" className="button">
+            <i className="fas fa-paper-plane"></i> Email Us
+          </a>
+        </div>
       </section>
 
       <footer>
-        <p>&copy; 2025 Forward Yesterday. All rights reserved.</p>
+        <div className="footer-content">
+          <p>&copy; 2025 Forward Yesterday. All rights reserved.</p>
+        </div>
       </footer>
     </div>
   );
