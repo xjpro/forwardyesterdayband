@@ -10,9 +10,9 @@ export default function Home() {
         </div>
       </header>
 
-      <div className="band-image-bg">
-        <section className="band-image" />
-      </div>
+      {/*<div className="band-image-bg">*/}
+      {/*  <section className="band-image" />*/}
+      {/*</div>*/}
 
       {/*https://youtube.com/shorts/DjFDCiKNGgc?si=VUcaM2nZC9kDDD5j*/}
       <section className="flex video-about-section">

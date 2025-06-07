@@ -44,7 +44,7 @@ header h1 {
   font-size: 4rem;
   font-family: "Pacifico", cursive;
   text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
-  animation: glow 2s ease-in-out infinite alternate;
+  /*animation: glow 2s ease-in-out infinite alternate;*/
   position: relative;
   z-index: 1;
 }
