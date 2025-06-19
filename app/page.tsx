@@ -17,7 +17,6 @@ export default function Home() {
       {/*https://youtube.com/shorts/DjFDCiKNGgc?si=VUcaM2nZC9kDDD5j*/}
       <section className="flex video-about-section">
         <div className="video-container">
-
           <iframe
             width={dimensions.width * scale}
             height={dimensions.height * scale}
@@ -41,9 +40,9 @@ export default function Home() {
             reimagined songs.
           </p>
           <p>
-            <i className="fas fa-guitar"></i> Acoustic guitar
-            <i className="fas fa-drum ms-3"></i> Percussion
-            <i className="fas fa-music ms-3"></i> Upright bass
+            <i className="fas fa-guitar" /> Acoustic guitar
+            <i className="fas fa-drum ms-3" /> Percussion
+            <i className="fas fa-music ms-3" /> Upright bass
           </p>
         </div>
       </section>
@@ -54,47 +53,53 @@ export default function Home() {
         </h2>
         <div className="event-card">
           <div className="event-date">
-            <span className="event-month">JUN</span>
+            <span className="event-month">JUL</span>
             <span className="event-day">12</span>
           </div>
           <div className="event-details">
-            <h3>Kingfield Porchest</h3>
-            <p>
-              <i className="fas fa-clock"></i> 8:00 PM
-            </p>
-            <p>
-              <i className="fas fa-map-marker-alt"></i> 4254 Garfield in
-              Minneapolis
-            </p>
+            <h3>Private Event</h3>
+            {/*<p>*/}
+            {/*  <i className="fas fa-clock"></i> 8:00 PM*/}
+            {/*</p>*/}
+            {/*<p>*/}
+            {/*  <i className="fas fa-map-marker-alt"></i> 4254 Garfield in*/}
+            {/*  Minneapolis*/}
+            {/*</p>*/}
           </div>
         </div>
       </section>
 
       <section className="past-shows">
         <h2>
-          <i className="fas fa-history"></i> Past Shows of 2025
+          <i className="fas fa-history" /> Past Shows of 2025
         </h2>
         <div className="shows-grid">
           <div className="show-item">
-            <i className="fas fa-music show-icon"></i>
+            <i className="fas fa-music show-icon" />
+            <p className="show-date">June 12th</p>
+            <p className="show-time">7:00pm</p>
+            <p className="show-venue">Kingfield Porchfest</p>
+          </div>
+          <div className="show-item">
+            <i className="fas fa-music show-icon" />
             <p className="show-date">April 26th</p>
             <p className="show-time">10:30am</p>
             <p className="show-venue">The Finnish Bistro</p>
           </div>
           <div className="show-item">
-            <i className="fas fa-music show-icon"></i>
+            <i className="fas fa-music show-icon" />
             <p className="show-date">March 23rd</p>
             <p className="show-time">10:30am</p>
             <p className="show-venue">The Finnish Bistro</p>
           </div>
           <div className="show-item">
-            <i className="fas fa-music show-icon"></i>
+            <i className="fas fa-music show-icon" />
             <p className="show-date">February 23rd</p>
             <p className="show-time">10:30am</p>
             <p className="show-venue">The Finnish Bistro</p>
           </div>
           <div className="show-item">
-            <i className="fas fa-music show-icon"></i>
+            <i className="fas fa-music show-icon" />
             <p className="show-date">January 19th</p>
             <p className="show-time">10:30am</p>
             <p className="show-venue">The Finnish Bistro</p>
@@ -104,7 +109,7 @@ export default function Home() {
 
       <section className="contact-section">
         <h2>
-          <i className="fas fa-envelope"></i> Contact Us
+          <i className="fas fa-envelope" /> Contact Us
         </h2>
         <p>Interested in booking us or learning more?</p>
         <div className="contact-info">
