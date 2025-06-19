@@ -93,7 +93,7 @@ section::before {
 }
 
 section:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05) translateY(-5px);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
 }
 
@@ -126,7 +126,7 @@ section:hover {
 }
 
 .button:hover {
-  transform: translateY(-3px);
+  /*transform: translateY(-3px);*/
   box-shadow: 0 6px 20px rgba(52, 152, 219, 0.5);
 }
 
@@ -274,7 +274,7 @@ h2::after {
 }
 
 .about-us:hover {
-  transform: translateY(-5px);
+  /*transform: translateY(-5px);*/
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
 }
 
@@ -375,7 +375,7 @@ h2::after {
 }
 
 .video-frame:hover {
-  transform: scale(1.02);
+  /*transform: scale(1.02);*/
 }
 
 .band-outline-container {
@@ -415,7 +415,7 @@ h2::after {
 }
 
 .event-card:hover {
-  transform: translateY(-5px);
+  /*transform: translateY(-5px);*/
 }
 
 .event-date {
@@ -488,7 +488,7 @@ h2::after {
 }
 
 .show-item:hover {
-  transform: translateY(-5px);
+  /*transform: translateY(-5px);*/
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
@@ -544,7 +544,7 @@ h2::after {
 
 .social-icon:hover {
   background: linear-gradient(135deg, #8e44ad, #3498db);
-  transform: translateY(-3px);
+  /*transform: translateY(-3px);*/
 }
 
 .footer-content {
