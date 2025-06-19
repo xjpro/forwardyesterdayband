@@ -40,9 +40,9 @@ export default function Home() {
             reimagined songs.
           </p>
           <p>
-            <i className="fas fa-guitar" /> Acoustic guitar
+            <i className="fas fa-guitar" /> Acoustic Guitar
             <i className="fas fa-drum ms-3" /> Percussion
-            <i className="fas fa-music ms-3" /> Upright bass
+            <i className="fas fa-music ms-3" /> Upright Bass
           </p>
         </div>
       </section>
