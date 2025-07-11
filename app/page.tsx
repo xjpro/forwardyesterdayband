@@ -57,14 +57,14 @@ export default function Home() {
             <span className="event-day">12</span>
           </div>
           <div className="event-details">
-            <h3>Private Event</h3>
-            {/*<p>*/}
-            {/*  <i className="fas fa-clock"></i> 8:00 PM*/}
-            {/*</p>*/}
-            {/*<p>*/}
-            {/*  <i className="fas fa-map-marker-alt"></i> 4254 Garfield in*/}
-            {/*  Minneapolis*/}
-            {/*</p>*/}
+            <h3>Frog Fest</h3>
+            <p>
+              <i className="fas fa-clock"></i> 5:00 PM
+            </p>
+            <p>
+              <i className="fas fa-map-marker-alt"></i> 1986 Ashbury Street in
+              Roseville
+            </p>
           </div>
         </div>
       </section>
