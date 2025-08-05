@@ -53,17 +53,13 @@ export default function Home() {
         </h2>
         <div className="event-card">
           <div className="event-date">
-            <span className="event-month">JUL</span>
-            <span className="event-day">12</span>
+            <span className="event-month">AUG</span>
+            <span className="event-day">9</span>
           </div>
           <div className="event-details">
-            <h3>Frog Fest</h3>
+            <h3>The Finnish Bistro</h3>
             <p>
-              <i className="fas fa-clock"></i> 5:00 PM
-            </p>
-            <p>
-              <i className="fas fa-map-marker-alt"></i> 1986 Ashbury Street in
-              Roseville
+              <i className="fas fa-clock"></i> 10:30 AM
             </p>
           </div>
         </div>
@@ -74,6 +70,12 @@ export default function Home() {
           <i className="fas fa-history" /> Past Shows of 2025
         </h2>
         <div className="shows-grid">
+          <div className="show-item">
+            <i className="fas fa-music show-icon" />
+            <p className="show-date">July 12th</p>
+            <p className="show-time">6:00pm</p>
+            <p className="show-venue">Frog Fest</p>
+          </div>
           <div className="show-item">
             <i className="fas fa-music show-icon" />
             <p className="show-date">June 12th</p>
