@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import SongItem from "./components/SongItem";
+import SongItem from "@/components/SongItem";
 
 const dimensions = { width: 200, height: 315 };
 const scale = 1.5;
