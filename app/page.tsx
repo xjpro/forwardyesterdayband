@@ -1,7 +1,33 @@
+"use client";
+
+import { useEffect } from "react";
+
 const dimensions = { width: 200, height: 315 };
 const scale = 1.5;
 
 export default function Home() {
+  useEffect(() => {
+    const audioElements = document.querySelectorAll("audio");
+
+    const handlePlay = (event: Event) => {
+      const currentAudio = event.target as HTMLAudioElement;
+      audioElements.forEach((audio) => {
+        if (audio !== currentAudio) {
+          audio.pause();
+        }
+      });
+    };
+
+    audioElements.forEach((audio) => {
+      audio.addEventListener("play", handlePlay);
+    });
+
+    return () => {
+      audioElements.forEach((audio) => {
+        audio.removeEventListener("play", handlePlay);
+      });
+    };
+  }, []);
   return (
     <div className="main-container">
       <header>
@@ -44,6 +70,50 @@ export default function Home() {
             <i className="fas fa-drum ms-3" /> Percussion
             <i className="fas fa-music ms-3" /> Upright Bass
           </p>
+        </div>
+      </section>
+
+      <section className="music-player-section">
+        <h2>
+          <i className="fas fa-music"></i> Listen
+        </h2>
+        <div className="songs-grid" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+          <div className="song-item">
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', width: '600px' }}>
+              <h3 style={{ width: '300px', textAlign: 'left', margin: 0 }}>Interstate Love Song</h3>
+              <audio controls preload="none">
+                <source src="/songs/interstate-love-song.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+          <div className="song-item">
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', width: '600px' }}>
+              <h3 style={{ width: '300px', textAlign: 'left', margin: 0 }}>I&apos;m Just Ken</h3>
+              <audio controls preload="none">
+                <source src="/songs/just-ken.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+          <div className="song-item">
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', width: '600px' }}>
+              <h3 style={{ width: '300px', textAlign: 'left', margin: 0 }}>Nutshell</h3>
+              <audio controls preload="none">
+                <source src="/songs/nutshell.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+          <div className="song-item">
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', width: '600px' }}>
+              <h3 style={{ width: '300px', textAlign: 'left', margin: 0 }}>Wicked Game</h3>
+              <audio controls preload="none">
+                <source src="/songs/wicked-game.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
         </div>
       </section>
 
