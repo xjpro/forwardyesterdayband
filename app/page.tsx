@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import SongItem from "./components/SongItem";
 
 const dimensions = { width: 200, height: 315 };
 const scale = 1.5;
@@ -86,63 +87,12 @@ export default function Home() {
             gap: "1rem",
           }}
         >
-          <div className="song-item">
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "1rem",
-                width: "600px",
-              }}
-            >
-              <h3 style={{ width: "300px", textAlign: "left", margin: 0 }}>
-                Interstate Love Song
-              </h3>
-              <audio controls preload="none">
-                <source
-                  src="/songs/interstate-love-song.mp3"
-                  type="audio/mpeg"
-                />
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-          </div>
-          <div className="song-item">
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "1rem",
-                width: "600px",
-              }}
-            >
-              <h3 style={{ width: "300px", textAlign: "left", margin: 0 }}>
-                I&apos;m Just Ken
-              </h3>
-              <audio controls preload="none">
-                <source src="/songs/just-ken.mp3" type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-          </div>
-          <div className="song-item">
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "1rem",
-                width: "600px",
-              }}
-            >
-              <h3 style={{ width: "300px", textAlign: "left", margin: 0 }}>
-                Wicked Game
-              </h3>
-              <audio controls preload="none">
-                <source src="/songs/wicked-game.mp3" type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-          </div>
+          <SongItem
+            title="Interstate Love Song"
+            audioSrc="/songs/interstate-love-song.mp3"
+          />
+          <SongItem title="I'm Just Ken" audioSrc="/songs/just-ken.mp3" />
+          <SongItem title="Wicked Game" audioSrc="/songs/wicked-game.mp3" />
         </div>
       </section>
 
