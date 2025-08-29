@@ -558,3 +558,34 @@ h2::after {
 .ms-3 {
   margin-left: 1rem;
 }
+
+/* Song Item Responsive Styles */
+.song-item-content {
+  flex-direction: row;
+}
+
+.song-title {
+  text-align: left;
+}
+
+/* Mobile styles - stack elements vertically */
+@media (max-width: 600px) {
+  .song-item-content {
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+  
+  .song-title {
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 0.5rem !important;
+    flex: none !important;
+  }
+  
+  .song-item audio {
+    width: 100%;
+    max-width: 300px;
+  }
+}
