@@ -77,19 +77,48 @@ export default function Home() {
         <h2>
           <i className="fas fa-music"></i> Listen
         </h2>
-        <div className="songs-grid" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+        <div
+          className="songs-grid"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "1rem",
+          }}
+        >
           <div className="song-item">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', width: '600px' }}>
-              <h3 style={{ width: '300px', textAlign: 'left', margin: 0 }}>Interstate Love Song</h3>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "1rem",
+                width: "600px",
+              }}
+            >
+              <h3 style={{ width: "300px", textAlign: "left", margin: 0 }}>
+                Interstate Love Song
+              </h3>
               <audio controls preload="none">
-                <source src="/songs/interstate-love-song.mp3" type="audio/mpeg" />
+                <source
+                  src="/songs/interstate-love-song.mp3"
+                  type="audio/mpeg"
+                />
                 Your browser does not support the audio element.
               </audio>
             </div>
           </div>
           <div className="song-item">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', width: '600px' }}>
-              <h3 style={{ width: '300px', textAlign: 'left', margin: 0 }}>I&apos;m Just Ken</h3>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "1rem",
+                width: "600px",
+              }}
+            >
+              <h3 style={{ width: "300px", textAlign: "left", margin: 0 }}>
+                I&apos;m Just Ken
+              </h3>
               <audio controls preload="none">
                 <source src="/songs/just-ken.mp3" type="audio/mpeg" />
                 Your browser does not support the audio element.
@@ -97,17 +126,17 @@ export default function Home() {
             </div>
           </div>
           <div className="song-item">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', width: '600px' }}>
-              <h3 style={{ width: '300px', textAlign: 'left', margin: 0 }}>Nutshell</h3>
-              <audio controls preload="none">
-                <source src="/songs/nutshell.mp3" type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-          </div>
-          <div className="song-item">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', width: '600px' }}>
-              <h3 style={{ width: '300px', textAlign: 'left', margin: 0 }}>Wicked Game</h3>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "1rem",
+                width: "600px",
+              }}
+            >
+              <h3 style={{ width: "300px", textAlign: "left", margin: 0 }}>
+                Wicked Game
+              </h3>
               <audio controls preload="none">
                 <source src="/songs/wicked-game.mp3" type="audio/mpeg" />
                 Your browser does not support the audio element.
