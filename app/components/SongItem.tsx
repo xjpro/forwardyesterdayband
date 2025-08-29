@@ -17,7 +17,14 @@ export default function SongItem({ title, audioSrc }: SongItemProps) {
         <h3 style={{ width: "300px", textAlign: "left", margin: 0 }}>
           {title}
         </h3>
-        <audio controls preload="none">
+        <audio
+          controls
+          preload="none"
+          style={{
+            filter: "invert(1)",
+            backgroundColor: "transparent",
+          }}
+        >
           <source src={audioSrc} type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
